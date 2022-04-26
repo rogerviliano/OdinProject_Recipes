@@ -1,0 +1,85 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,700&display=swap');
+
+
+body {
+    margin: 0px;
+    background-color: rgb(230, 206, 159);
+}
+section.corpo-total {
+    position: relative;
+    left: auto;
+    top: 0px;
+    width: 70%;
+    height: 600px;
+    background-color: #ffffff;
+    margin: auto;
+    border: 1px solid rgba(0,0,0,0.2);
+    box-shadow: 2px 2px 7px rgba(153, 69, 13, 0.7);   
+}
+.titulo {
+    color:rgb(231, 168, 31);
+    font-family: 'raleway', sans-serif;
+    font-size: 40pt;
+    padding-left: 20px;
+    margin-top: 10px;
+    text-align: left;
+    text-shadow: 1px 1px 2px rgba(126, 55, 8, 0.8);
+}
+footer .odin-logo {
+    width: 280px;
+    height: auto;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+figure.imagem-central {
+    position: absolute;
+    top: 55%;
+    left: 31%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%) ;
+    border: none;
+    margin: 0px;
+    box-sizing: content-box;
+}
+img {
+    width: 400px;
+    height: auto;
+}
+ul.lista-receitas {
+    margin-top: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 25%;
+    left: 65%;
+    list-style: none;
+}
+li {
+    position: relative;
+    background-color:none;
+    transition: 0.3s;
+    display:block;
+    text-transform: uppercase;
+    margin-bottom: 60px;
+    padding: 20px; 
+    border: none;
+    box-shadow: 2px 2px 4px rgb(145, 89, 17);
+    border-radius: 5%;        
+}
+li:hover {
+    background-color:rgb(231, 168, 31);   
+}
+a {
+    font-family: Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(26, 95, 47);
+}
+a:hover {
+    
+    color: #fff;
+}
