@@ -143,6 +143,9 @@ a {
     padding: 10px;
     background-color: rgba(248, 225, 175, 0.678);
 }
+.bolinho-de-chuva {
+    font-size: 14.5px;
+}
 li {
     margin-left: -25px;
 }
