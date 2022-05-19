@@ -11,6 +11,7 @@ body {
     left: auto;
     top: 0px;
     width: 70%;
+    max-width: 1140px;
     height: 600px;
     background-color: #ffffff;
     margin: auto;
@@ -55,24 +56,18 @@ body {
     height: auto;
 }
 div.imagem-legenda {
-    display: flex;
-    flex-direction: column;
     margin: 20px;
 }
-.legenda-principal{
+.legenda-principal {
     color: #336a33;
-
 }
-
-img.heroe-image{
-   
+img.heroe-image {
     width: 45%;
     height: auto;
-   
+    max-height: 280px;
     border-radius: 10px;
     box-shadow: 5px 5px 5px rgb(182, 124, 17);
 }
- 
 .lista-receitas {
     margin-top: 0px;
     padding: 0px;
@@ -115,9 +110,9 @@ a {
     color: rgb(150, 40, 21);
     margin-right: 5px;
 }
-.div-ingridients {
+.div-ingredients {
     font-size: 15px;
-    text-align: center;
+    text-align: left;
     position: absolute;
     top:10%;
     right: 2%;
@@ -131,7 +126,7 @@ a {
 }
 .div-directions {
     font-size: 15px;
-    text-align: center;
+    text-align: left;
     position: absolute;
     bottom:5%;
     right: 2%;
