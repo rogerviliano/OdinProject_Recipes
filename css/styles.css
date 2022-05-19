@@ -146,6 +146,17 @@ a {
 .bolinho-de-chuva {
     font-size: 14.5px;
 }
+.carreteiro {
+    font-size: 13px;
+    text-align: left;
+}
+.carreteiro h3 {
+    margin-top: 0px;
+    margin-bottom: 2px;
+}
+.carreteiro ul {
+    margin-top: 0px;
+}
 li {
     margin-left: -25px;
 }
