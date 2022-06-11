@@ -1,59 +1,68 @@
 @charset "utf-8";
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,500;1,700&display=swap');
 
-
-body {
-    margin: 0px;
-    background-color: rgb(230, 206, 159);
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
-.corpo-total {
-    position: relative;
-    left: auto;
-    top: 0px;
-    width: 70%;
+a {
+    text-decoration: none;
+    color: rgb(150, 40, 21);
+    margin-right: 5px;
+    font-size: 1.6rem;
+}
+
+html {
+    font-size: 62.5%;
+}
+body {/*Example of Type selector*/
+    margin: 0px;
+   
+}
+.header {
+
+}
+.corpo-total {/*Example of class selector. To ID selector just use #corpo-total, if it was the case */
+    width: 100%;
     max-width: 1140px;
-    height: 600px;
     background-color: #ffffff;
     margin: auto;
-    border: 1px solid rgba(0,0,0,0.2);
-    box-shadow: 2px 2px 7px rgba(153, 69, 13, 0.7);   
+    padding: 2%;
 }
 .first-text {
-    position: absolute;
-    left: 20px;
-    top: 420px;
     width: 60%;
 }
 
 .titulo {
     color:rgb(231, 168, 31);
     font-family: 'raleway', sans-serif;
-    font-size: 40pt;
-    padding-left: 20px;
-    margin: 10px;
-    text-align: left;
+    font-size: 3.8rem;
+    text-align: center;
+    padding: 1rem 1rem 0;
+    margin: 0;
     text-shadow: 1px 1px 2px rgba(126, 55, 8, 0.8);
 }
 .odin-logo {
     width: 280px;
     height: auto;
-    position: absolute;
+    
     bottom: 0px;
     right: 0px;
 }
 .imagem-central {
-    position: absolute;
-    top: 55%;
-    left: 31%;
-    margin-right: -50%;
-    transform: translate(-50%, -50%) ;
+    display: block;
+    width: 300px;
+    height: auto;
     border: none;
     margin: 0px;
-    box-sizing: content-box;
+    
 }
-.imagem-principal {
-    width: 400px;
+.foto-principal {
+    display: block;
+    width: 100%;
     height: auto;
+    
 }
 div.imagem-legenda {
     margin: 20px;
@@ -61,7 +70,7 @@ div.imagem-legenda {
 .legenda-principal {
     color: #336a33;
 }
-img.heroe-image {
+img.heroe-image {/**/
     width: 45%;
     height: auto;
     max-height: 280px;
@@ -69,34 +78,29 @@ img.heroe-image {
     box-shadow: 5px 5px 5px rgb(182, 124, 17);
 }
 .lista-receitas {
-    margin-top: 0px;
+    margin-top: 2.4rem;
     padding: 0px;
-    position: absolute;
-    top: 25%;
-    left: 65%;
     list-style: none;
 }
 .li-receitas {
-    text-indent: 0px;
+    
     position: relative;
     background-color:none;
     transition: 0.3s;
-    display:block;
     text-transform: uppercase;
-    margin-bottom: 60px;
-    padding: 20px; 
-    border: none;
-    box-shadow: 2px 2px 4px rgb(145, 43, 17);
-    border-radius: 5%;        
+    margin-bottom: 8px;          
 }
 .li-receitas:hover {
     background-color:rgb(231, 168, 31);   
 }
 .li-links {
+    display: block;
+    width: 20rem;
+    margin: auto;
+    padding: 1.5rem;
+    border: 1px solid rgb(231, 168, 31);
+    border-radius: 0.8rem;
     font-family: Helvetica, sans-serif;
-    font-style: italic;
-    font-weight: 500;
-    box-sizing: border-box;
     text-align: center;
     text-decoration: none;
     color: rgb(26, 95, 47);
@@ -105,40 +109,30 @@ img.heroe-image {
     
     color: #fff;
 }
-a {
-    text-decoration: none;
-    color: rgb(150, 40, 21);
-    margin-right: 5px;
-}
-.div-ingredients {
-    font-size: 15px;
-    text-align: left;
-    position: absolute;
-    top:10%;
-    right: 2%;
-    height: auto;
-    width: 30%;
-    border: 1px solid black;
-    padding: 10px;
-    border-color: orange;
-    border-radius: 10px;
-    background-color: rgba(248, 225, 175, 0.678);
-}
+
+.div-ingredients,
 .div-directions {
     font-size: 15px;
     text-align: left;
-    position: absolute;
-    bottom:5%;
-    right: 2%;
+    border: 1px solid black;
+    padding: 10px;
     height: auto;
     width: 30%;
-    border: 1px solid black;
     border-color: orange;
     border-radius: 10px;
-    padding: 10px;
     background-color: rgba(248, 225, 175, 0.678);
 }
-.bolinho-de-chuva {
+
+.div-ingredients {
+    
+    top:10%;
+    right: 2%;    
+}
+.div-directions {
+    bottom:5%;
+    right: 2%;
+}
+.div-ingredients.bolinho-de-chuva {/*Example of Chaining Selectors*/
     font-size: 14.5px;
 }
 .carreteiro {
@@ -149,20 +143,18 @@ a {
     margin-top: 0px;
     margin-bottom: 2px;
 }
-.carreteiro ul {
+.carreteiro ul {/*Example of Descendant Combinator: a single space between selectors.*/
     margin-top: 0px;
 }
 li {
     margin-left: -25px;
 }
-footer {
-    width: 98%;
+.footer {
+    width: 100%;
     display: flex;
     align-items:flex-end;
-    justify-content: space-between;
-    position:absolute;
-    bottom: 5px;
-    margin-left: 5px;
+    justify-content: center;
+    margin-left: auto;
 }
 .mensagem-final {
     color: #336a33;
